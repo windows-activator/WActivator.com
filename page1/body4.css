@@ -1,0 +1,88 @@
+:root{
+    --color-decoration: #EB6841;
+    --bg-color: #1f242d;
+    --bg-color2: #323946;
+    --font-color: rgb(0, 255, 0);
+    --family: Josefin Sans;
+}
+
+.background4{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 2200px;
+    background-color: var(--bg-color);
+    z-index: -1;
+}
+
+
+.steps{
+    color: white;
+    font-size: 100px;
+    margin: 120px 0 60px 100px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    animation: steps 1s forwards;
+}
+
+.sp{
+    color: red;
+    margin: 0 0 0 3px;
+}
+
+@keyframes steps {
+    0%{
+        margin: 120px 0 60px 20px;
+    }
+
+    100%{
+        margin: 120px 0 60px 100px;
+    }
+}
+
+
+.background4 > div > ul > li{
+    color: var(--font-color);
+    margin: 45px 0 1px 230px;
+    font-size: 30px;
+    font-family: Roboto, Helvetica, sans-serif;
+    animation: ulli 1s forwards;
+}
+
+@keyframes ulli {
+    0%{
+    margin: 45px 0 1px 150px;
+
+    }
+
+    100%{
+    margin: 45px 0 1px 230px;
+
+    }
+} 
+
+
+.background4 > div > ul > li > span{
+    color: white;
+}
+
+.enjoy-class{
+    position: relative;
+    z-index: -20;
+}
+
+.enjoy{
+    position: absolute;
+    color: red;
+    margin: 40px 0 0 800px;
+    font-size: 70px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+
