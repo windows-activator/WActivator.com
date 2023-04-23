@@ -1,0 +1,153 @@
+:root{
+    --color-decoration: #EB6841;
+    --bg-color: #1f242d;
+    --bg-color2: #323946;
+    --font-color: rgb(0, 255, 0);
+    --family: Josefin Sans;
+}
+
+.background3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 3300px;
+    background-color: var(--bg-color2);
+    z-index: -10;
+}
+
+
+.p6{
+    color: white;
+    margin: 180px 0 0 520px;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.windows-tx{
+    color: red;
+}
+
+.windows-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 25px 80px 0 80px;
+    column-gap: 15px;
+}
+
+.windows-8-grid:hover,
+.windows-10-grid:hover,
+.windows-11-grid:hover{
+    border: 1px solid red;
+}
+
+@keyframes grids {
+    0%{
+        margin: 80px 0 0 0;
+        opacity: 0;
+    }
+
+    100%{
+        margin: 0px 0 0 0;
+        opacity: 1;
+    }
+}
+
+.windows-8-grid{
+    background-color: var(--bg-color);
+    height: 650px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    margin: 0px 0px;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: Roboto, Helvetica, sans-serif;
+    cursor: pointer;
+    animation: grids 1s forwards;
+}
+
+.windows-8-p{
+    margin-left: 140px;
+    margin-top: 80px;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.windows-10-grid{
+    background-color: var(--bg-color);
+    height: 650px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    margin: 0px 0px;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: Roboto, Helvetica, sans-serif;
+    cursor: pointer;
+    animation: grids 1s forwards;
+}
+
+.windows-11-grid{
+    background-color: var(--bg-color);
+    height: 650px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    margin: 0px 0px;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: Roboto, Helvetica, sans-serif;
+    cursor: pointer;
+    animation: grids 1s forwards;
+}
+
+.windows-8{
+    display: block;
+    color: white;
+    margin: 0px 0px;
+    font-size: 60px;
+    font-weight: 450;
+    font-family: Roboto, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: -25px;
+    margin-bottom: 40px;
+}
+
+.windows-3 img{
+    margin: 100px 0 0 180px;
+    height: 160px;
+}
+
+.bottom-8{
+    border: 0.1px solid green;
+    border-radius: 50px;
+    margin: 0 0 0 145px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    color: var(--bg-color);
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+    transition: all 0.4s;
+    animation: activation-bottom 1.5s forwards;
+    animation-iteration-count: 1;
+}
+
+.bottom-8:hover{
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 30px red;
+    border-color: white;
+}
+
+
+.w8,
+.w10,
+.w11{
+    color: red;
+}

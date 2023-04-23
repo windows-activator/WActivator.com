@@ -1,0 +1,177 @@
+:root{
+    --color-decoration: #EB6841;
+    --bg-color: #1f242d;
+    --bg-color2: #323946;
+    --font-color: rgb(0, 255, 0);
+    --family: Josefin Sans;
+}
+
+.logo{
+    height: 80px;
+    animation: logo 1s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo {
+    0%{
+      margin-left: -50px;
+      opacity: 0;
+    }
+
+    100%{
+     margin-left: 0px;
+     opacity: 1;
+    }
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom: 0.1px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: black;
+    border-style: solid;
+    background-color: var(--bg-color);
+    z-index: 150;
+}
+
+.left{
+    width: 200px;
+    margin-left: 75px;
+    margin-top: 25px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.right{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 220px;
+}
+
+.activation-top{
+    font-size: 23px;
+    cursor: pointer;
+    background-color: var(--color-decoration);
+    border: 0 solid red;
+    border-radius: 50px;
+    padding: 7px 40px;
+    color: white;
+    animation: activation-top 1s forwards;
+    animation-iteration-count: 1;
+    transition: all 0.15s;
+}
+
+.activation-top:hover{
+    color: black;
+    padding: 8px 42px;
+    background-color: var(--font-color);
+    border: 1px red solid;
+}
+
+
+@keyframes activation-top {
+    0%{
+     margin-left: 150px;
+     opacity: 0;
+    }
+
+    100%{
+      margin-left: 0px;
+     opacity: 1;
+    }
+}   
+
+.home,
+.about,
+.allsteps,
+.windows-nav{
+    text-decoration: none;
+    font-family: var(--family);
+    font-size: 23px;
+    color: white;
+    position: relative;
+}
+
+.home:hover,
+.about:hover,
+.allsteps:hover,
+.windows-nav:hover {
+    color: var(--color-decoration);
+}
+
+.home{
+    animation: allhome 1s forwards;
+    animation-iteration-count: 1;
+    color: white;
+}
+
+.about{
+    animation: allhome 1s forwards;
+    animation-iteration-count: 1;
+    color: white;
+}
+
+.allsteps{
+    animation: allhome 1s forwards;
+    animation-iteration-count: 1;
+    color: white;
+}
+
+.windows-nav{
+    animation: allhome 1s forwards;
+    animation-iteration-count: 1;
+    color: white;
+}
+
+@keyframes allhome{
+    0%{
+         margin-bottom: 100px;
+         opacity: 0;
+    }
+    100%{
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+.home::after,
+.about::after,
+.windows-nav::after,
+.allsteps::after {
+    content: "";
+    height: 3px;
+    border-radius: 100px;
+    position: absolute;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    left: 0px;
+    right: 100px;
+    bottom: -3.5px;
+    transition: 0.3s;
+    width: 0;
+}
+
+.home:hover:after,
+.about:hover:after,
+.windows-nav:hover::after,
+.allsteps:hover::after {
+    width: 101%;
+}

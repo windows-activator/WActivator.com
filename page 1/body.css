@@ -1,0 +1,255 @@
+html{
+    scroll-behavior:   smooth;
+}
+
+body{
+    background-color: white;
+    margin-top: 90px;
+}
+
+:root{
+    --color-decoration: #EB6841;
+    --bg-color: #1f242d;
+    --bg-color2: #323946;
+    --font-color: rgb(0, 255, 0);
+    --family: Josefin Sans;
+}
+
+.background1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    z-index: -10;
+}
+
+.affilifate-container{
+    position: absolute;
+    top: 970px;
+    right: 00;
+}
+
+.affilifate-link{
+    position: absolute;
+    top: 960px;
+    right: 0;
+}
+
+.affilifate-link > a > div{
+    height: 150px;
+    width: 1920px;
+}
+
+.affilifate-container2{
+    position: absolute;
+    top: 2070px;
+    right: 00;
+}
+
+.affilifate-link2{
+    position: absolute;
+    top: 2060px;
+    right: 0;
+}
+
+.affilifate-link2 > a > div{
+    height: 150px;
+    width: 1920px;
+}
+
+.affilifate-container3{
+    position: absolute;
+    top: 3160px;
+    right: 00;
+}
+
+
+.affilifate-link3{
+    position: absolute;
+    top: 3160px;
+    right: 0;
+}
+
+.affilifate-link3 > a > div{
+    height: 150px;
+    width: 1920px;
+}
+    
+
+.text{
+    margin-left: 143%;
+    margin-top: 40%;
+    width: 40vw;
+}
+
+.p1{
+    color: white;
+    margin: -6px 0px;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: Roboto, Helvetica, sans-serif;
+    animation: p1 1s forwards;
+}
+
+.to{
+    color: var(--color-decoration);
+}
+
+.p2{
+    color: #03d431;
+    margin: 0px 0px;
+    font-size: 40px;
+    font-weight: 450;
+    font-family: Roboto, Helvetica, sans-serif;
+    animation: p2 10s forwards infinite;
+}
+
+@keyframes p2 { 
+    0%{
+        color: #05aaa2;
+    }
+
+    50%{
+        color: #03d431;
+    }
+
+    100%{
+        color: #05aaa2;
+    }
+}
+
+
+
+@keyframes p1 {
+    0%{
+        margin-top: 60px;
+        opacity: 0;
+    }
+
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.p3{
+    color: white;
+    font-size: 23px;
+    font-family: Roboto;
+}
+
+.p4 {
+    width: 100%;
+    color: white;
+    margin: 45px 80px;
+    font-size: 30px;
+    font-weight: 450;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.windows-tr{
+    position: absolute;
+    font-size: 50px;
+    margin: -10px 0 0 20px;
+    color: var(--font-color);
+    animation: windows-tr 10s forwards infinite;
+}
+
+@keyframes windows-tr {
+    0%{
+        color: #EB6841;
+    }
+
+    25%{
+        color: #03d431;
+    }
+
+    50%{
+        color: #05aaa2;
+    }
+
+    75%{
+        color: aquamarine;
+    }
+
+    100%{
+        color: #EB6841;
+    }
+}
+
+
+.activation-bottom{
+    border: 0.1px solid green;
+    border-radius: 50px;
+    margin-left: 3px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    color: var(--bg-color);
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+    transition: all 0.4s;
+    animation: activation-bottom 1.5s forwards;
+    animation-iteration-count: 1;
+}
+
+.activation-bottom:hover{
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 30px red;
+    border-color: white;
+}
+
+@keyframes activation-bottom {
+    0%{
+       margin-top: 60px;
+       opacity: 0;
+    }
+
+    100%{
+      margin-top: 0px;
+      opacity: 1;
+    }
+}
+
+.image-text{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 190px 500px;
+    column-gap: 20px;
+}
+
+.image{
+    margin-left: 195px;
+    animation: image 10s forwards;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes image {
+    0%{
+        margin-top: -10%;
+        margin-left: 195px;
+    }
+
+    50%{
+        margin-top: 60%;
+        margin-left: 195px;
+    }
+
+    100%{
+        margin-top: -10%;
+        margin-left: 195px;
+    }
+} 
+
+.img1{
+    display: inline-block;
+    height: 600px;
+    margin-top: 100px;
+    animation: img1 10s 0 1 forwards;
+}
