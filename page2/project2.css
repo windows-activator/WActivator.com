@@ -1,0 +1,260 @@
+:root{
+    --color-decoration: #EB6841;
+    --bg-color: #1f242d;
+    --bg-color2: #323946;
+    --family: Josefin Sans;
+}
+
+.background1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    z-index: -10;
+}
+
+.steps{
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    column-gap: 70px;
+    margin: 90px 35px 0 35px;
+}
+
+.step1{
+    height: 100%;
+    width: 110%;
+    margin: 7% 0 0 16%;
+    border-radius: 7px;
+    background-color: var(--bg-color2);
+}
+
+.step2{
+    height: 100%;
+    width: 110%;
+    margin: 7% 0 0 20%;
+    border-radius: 7px;
+    border: 0px solid red;
+    background-color: var(--bg-color2);
+}
+
+
+.step1:hover{
+    border: 1px solid red;
+}
+
+
+.p1{
+    color: white;
+    margin: 50px 0px 0px 30%;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: Roboto, Helvetica, sans-serif;
+    animation: p1 1s forwards;
+}
+
+
+.to{
+    color: var(--color-decoration);
+}
+
+.p2{
+    color: white;
+    width: 90%;
+    margin: 5% 0px 65px 50px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.p3{
+    color: white;
+    width: 90%;
+    margin: 5% 0px 65px 6%;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.box-container > div{
+    position: relative;
+}
+
+.box-container > div > p{
+    position: absolute;
+    display: inline-block;
+    color: rgb(0, 225, 255);
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: -52px 0 0 150px;
+}
+
+.box-container > div > img{
+    height: 54px;
+}
+
+.box{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 0 0 70px;
+    background-color: rgb(189, 179, 179);
+    border: 2px red solid;
+}
+
+.activation-bottom1{
+    border: 0.1px solid green;
+    border-radius: 50px;
+    margin: 50px 0 0 250px;
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    color: var(--bg-color);
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+    transition: all 0.4s;
+    animation: activation-bottom 1.5s forwards;
+    animation-iteration-count: 1;
+}
+
+
+.step2 > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.activation-bottom2{
+    text-decoration: none;
+    outline: none;
+    margin-top: 6%;
+    border: 0.1px solid green;
+    border-radius: 50px;
+    margin: 5% 0 0 0%;
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    color: var(--bg-color);
+    background-color: rgb(0, 255, 0);
+    cursor: not-allowed;
+    transition: all 0.4s;
+    animation: activation-bottom 1.5s forwards;
+    animation-iteration-count: 1;
+}
+
+.activation-bottom2:hover{
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 30px red;
+    border-color: white;
+}
+
+.video1{
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    height: 900px;
+    z-index: 50;
+}
+
+.buttonhover{
+    position: absolute;
+    top: 650px;
+    left: 1150px;
+    width: 300px;
+    height: 100px;
+    z-index: 4;
+}
+
+.buttonhover2{
+    position: absolute;
+    border-radius: 50px;
+    margin: 710px 0 0 390px;
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    color: var(--bg-color);
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.backgroundadd{
+    background-color: transparent;
+    position: absolute;
+    position: fixed;
+    width: 99%;
+    height: 99%;
+    z-index: 100;
+}
+
+
+.buy{
+    position: absolute;
+    top: 98%;
+    left: 44%;
+    border: 0.1px solid green;
+    border-radius: 10px;
+    margin: 5% 0 0 0%;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(240, 8, 8);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buy:hover{
+    border-radius: 30px;
+}
+
+
+@media (width <= 500px) {
+    .step1{
+        display: none;
+    }
+
+    .step2{
+        display: none;
+    }
+
+    .themedia{
+        display: contents;
+        position: absolutes;
+        color: white;
+    }
+}
+
+.pub{
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    width: 130px;
+    height: 90%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.pub2{
+    position: absolute;
+    left: 140px;
+    bottom: 0px;
+    width: 85.5%;
+    height: 13%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.pub3{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 130px;
+    height: 90%;
+    cursor: pointer;
+    background-color: transparent;
+}
