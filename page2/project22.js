@@ -8,6 +8,7 @@ const thegrayback = document.getElementById("buttonhover");
 const thegrayback2 = document.getElementById("buttonhover2");
 const backgroundadd = document.getElementById("backgroundadd");
 const password = document.getElementById("password");
+const three = document.getElementById("three");
 const buy = document.getElementById("buy");
 const pub = document.getElementById("pub");
 const pub2 = document.getElementById("pub2");
@@ -22,6 +23,7 @@ pp3.style.color = 'black';
 initializeStep2('0.5', 'not-allowed');
 backgroundaddactive("none");
 defoltdiv("transparent", "not-allowed", "inline-block");
+three.textContent = "please click on 3 ads";
 buybut("none");
 chekimgdisplay("none");
 passworddis("none");
@@ -116,9 +118,19 @@ thegrayback2.addEventListener("click", function() {
 
 
 
+
+
 // Event listeners for pubs:
 pub.addEventListener("click", function() {
     pubcount += 1;
+
+    if (pubcount === 1) {
+        three.textContent = "please click on 2 ads"
+    };
+
+    if (pubcount === 2) {
+        three.textContent = "please click on 1 ads"
+    };
 
     if (pubcount === 3) {
         button1.disabled = false;
@@ -126,11 +138,20 @@ pub.addEventListener("click", function() {
         defoltdiv2("blue", "not-allowed", "none");
         chekimgdisplay("inline-block");
         passworddis("inline-block");
+        three.textContent = "please click on 3 ads"
     }
 })
 
 pub2.addEventListener("click", function() {
     pubcount += 1;
+
+    if (pubcount === 1) {
+        three.textContent = "please click on 2 ads"
+    };
+
+    if (pubcount === 2) {
+        three.textContent = "please click on 1 ads"
+    };
 
     if (pubcount === 3) {
         button1.disabled = false;
@@ -138,11 +159,20 @@ pub2.addEventListener("click", function() {
          defoltdiv2("blue", "not-allowed", "none");
         chekimgdisplay("inline-block");
         passworddis("inline-block");
+        three.textContent = "please click on 3 ads"
     }
 })
 
 pub3.addEventListener("click", function() {
     pubcount += 1;
+
+    if (pubcount === 1) {
+        three.textContent = "please click on 2 ads"
+    };
+
+    if (pubcount === 2) {
+        three.textContent = "please click on 1 ads"
+    };
 
     if (pubcount === 3) {
         button1.disabled = false;
@@ -150,9 +180,9 @@ pub3.addEventListener("click", function() {
         defoltdiv2("blue", "not-allowed", "none");
         chekimgdisplay("inline-block");
         passworddis("inline-block");
+        three.textContent = "please click on 3 ads"
     }
 })
-
 
 
 // Event listeners for button1:
