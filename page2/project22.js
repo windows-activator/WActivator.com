@@ -1,11 +1,11 @@
 // Selecting elements from the DOM
 const button1 = document.querySelector('.activation-bottom1');
 const button2 = document.querySelector('.activation-bottom2');
+const button2cover = document.getElementById("button2cover");
 const step2 = document.querySelector('.step2');
 const pp1 = document.getElementById('pp1');
 const pp3 = document.getElementById('pp3');
-const thegrayback = document.getElementById("buttonhover");
-const thegrayback2 = document.getElementById("buttonhover2");
+let thegrayback = document.getElementById("buttonhover");
 const backgroundadd = document.getElementById("backgroundadd");
 const password = document.getElementById("password");
 const three = document.getElementById("three");
@@ -75,11 +75,6 @@ function defoltdiv (backgroundColor, cursor, display) {
     thegrayback.style.display = display;
 };
 
-function defoltdiv2 (backgroundColor, cursor, display) {
-    thegrayback2.style.backgroundColor = backgroundColor;
-    thegrayback2.style.cursor = cursor;
-    thegrayback2.style.display = display;
-};
 
 function backgroundaddactive (display) {
     backgroundadd.style.display = display;
@@ -104,9 +99,10 @@ function passworddis (display) {
     password.style.display = display;
 }
 
-thegrayback2.addEventListener("click", function() {
-    alert("please click on 3 ads in the page");
-});
+function button2cover_active () {
+    button2cover.style.display = "none";
+}
+
 
 
 
@@ -135,7 +131,6 @@ pub.addEventListener("click", function() {
     if (pubcount === 3) {
         button1.disabled = false;
         button1initial('rgb(0, 255, 0)', 'black', "pointer");
-        defoltdiv2("blue", "not-allowed", "none");
         chekimgdisplay("inline-block");
         passworddis("inline-block");
         three.textContent = "please click on 3 ads"
@@ -156,7 +151,6 @@ pub2.addEventListener("click", function() {
     if (pubcount === 3) {
         button1.disabled = false;
         button1initial('rgb(0, 255, 0)', 'black', "pointer");
-         defoltdiv2("blue", "not-allowed", "none");
         chekimgdisplay("inline-block");
         passworddis("inline-block");
         three.textContent = "please click on 3 ads"
@@ -177,7 +171,6 @@ pub3.addEventListener("click", function() {
     if (pubcount === 3) {
         button1.disabled = false;
         button1initial('rgb(0, 255, 0)', 'black', "pointer");
-        defoltdiv2("blue", "not-allowed", "none");
         chekimgdisplay("inline-block");
         passworddis("inline-block");
         three.textContent = "please click on 3 ads"
@@ -188,7 +181,6 @@ pub3.addEventListener("click", function() {
 // Event listeners for button1:
 button1.disabled = true;
 button1initial('gray', 'white', "not-allowed");
-defoltdiv2("transparent", "not-allowed", "inline-block");
 
 
     button1.addEventListener("mouseover", function() {
@@ -208,6 +200,7 @@ button1.addEventListener("click", function() {
     defoltdiv("transparent", "not-allowed", "none");
     setButton2InitialStyles();
     changeTextColor();
+    button2cover_active();
     
     if (active === true) {
         button2.addEventListener("mouseover", function() {
