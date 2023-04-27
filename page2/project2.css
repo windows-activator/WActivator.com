@@ -140,7 +140,7 @@
 }
 
 
-.step2 > div{
+.button2container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -164,24 +164,15 @@
     animation-iteration-count: 1;
 }
 
-.activation-bottom2:hover{
-    border: none;
-    color: white;
-    box-shadow: 0px 0px 30px red;
-    border-color: white;
-}
-
-.video1{
+.button2cover{
     position: absolute;
-    top: 120px;
-    left: 140px;
-    height: 900px;
-    z-index: 50;
+    width: 300px;
+    height: 100px;
 }
 
 .buttonhover{
     position: absolute;
-    top: 650px;
+    top: 6000050px;
     left: 1150px;
     width: 300px;
     height: 100px;
@@ -211,42 +202,6 @@
 }
 
 
-.buy{
-    position: absolute;
-    top: 98%;
-    left: 44%;
-    border: 0.1px solid green;
-    border-radius: 10px;
-    margin: 5% 0 0 0%;
-    width: 250px;
-    height: 60px;
-    font-size: 25px;
-    color: white;
-    background-color: rgb(240, 8, 8);
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.buy:hover{
-    border-radius: 30px;
-}
-
-
-@media (width <= 500px) {
-    .step1{
-        display: none;
-    }
-
-    .step2{
-        display: none;
-    }
-
-    .themedia{
-        display: contents;
-        position: absolutes;
-        color: white;
-    }
-}
 
 .pub{
     position: absolute;
